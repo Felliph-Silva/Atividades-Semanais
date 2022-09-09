@@ -1,0 +1,272 @@
+		The farm Cornvile
+			*Bulls*		*Pigs*		*Ducks*		*Chickens*
+
+City	city
+State	state
+Area (m²)	50.00
+Number of animals	42
+
+Number of bulls	11
+Price of bulls	R$158280.89
+Number of pigs	10
+Price of pigs	R$24158.95
+Number of ducks	11
+Price of ducks	R$1292.84
+Number of chickens	10
+Price of chickens	R$273.67
+
+Total price	R$184006.34
+Revenue	R$992.84
+
+
+			Bull  
+			Age	1 Months
+			Weight	370.352 Kg
+			Gender	Male
+			Price	12962.32
+
+				Pig  
+				Age	1 Months
+				Weight	77.068 Kg
+				Gender	Male
+				Price	2157.91
+
+						Chicken  
+						Age:    22 Months
+						Weight: 1.266 Kg
+						Gender: Male
+						Price:  R$25.31
+
+						Chicken  
+						Age:    2 Months
+						Weight: 1.281 Kg
+						Gender: Male
+						Price:  R$25.63
+
+				Pig  
+				Age	4 Months
+				Weight	97.150 Kg
+				Gender	Female
+				Price	2720.19
+
+					Duck  
+					Age	15 Months
+					Weight	3.434 Kg
+					Gender	Male
+					Price	109.89
+
+						Chicken  
+						Age:    14 Months
+						Weight: 1.544 Kg
+						Gender: Female
+						Price:  R$30.87
+
+			Bull  
+			Age	12 Months
+			Weight	401.989 Kg
+			Gender	Female
+			Price	14069.62
+
+					Duck  
+					Age	1 Months
+					Weight	4.342 Kg
+					Gender	Female
+					Price	138.95
+
+						Chicken  
+						Age:    27 Months
+						Weight: 1.167 Kg
+						Gender: Male
+						Price:  R$23.34
+
+				Pig  
+				Age	5 Months
+				Weight	90.374 Kg
+				Gender	Male
+				Price	2530.46
+
+					Duck  
+					Age	6 Months
+					Weight	3.277 Kg
+					Gender	Female
+					Price	104.87
+
+						Chicken  
+						Age:    7 Months
+						Weight: 1.238 Kg
+						Gender: Female
+						Price:  R$24.76
+
+						Chicken  
+						Age:    6 Months
+						Weight: 1.501 Kg
+						Gender: Male
+						Price:  R$30.02
+
+			Bull  
+			Age	8 Months
+			Weight	363.080 Kg
+			Gender	Male
+			Price	12707.79
+
+					Duck  
+					Age	26 Months
+					Weight	3.493 Kg
+					Gender	Female
+					Price	111.78
+
+					Duck  
+					Age	41 Months
+					Weight	3.302 Kg
+					Gender	Female
+					Price	105.67
+
+				Pig  
+				Age	2 Months
+				Weight	108.888 Kg
+				Gender	Male
+				Price	3048.87
+
+					Duck  
+					Age	26 Months
+					Weight	3.245 Kg
+					Gender	Female
+					Price	103.84
+
+				Pig  
+				Age	4 Months
+				Weight	83.982 Kg
+				Gender	Male
+				Price	2351.49
+
+			Bull  
+			Age	2 Months
+			Weight	348.683 Kg
+			Gender	Male
+			Price	12203.91
+
+					Duck  
+					Age	49 Months
+					Weight	3.859 Kg
+					Gender	Male
+					Price	123.49
+
+						Chicken  
+						Age:    17 Months
+						Weight: 1.648 Kg
+						Gender: Female
+						Price:  R$32.96
+
+			Bull  
+			Age	6 Months
+			Weight	472.521 Kg
+			Gender	Female
+			Price	16538.25
+
+					Duck  
+					Age	38 Months
+					Weight	3.679 Kg
+					Gender	Female
+					Price	117.72
+
+			Bull  
+			Age	7 Months
+			Weight	408.619 Kg
+			Gender	Male
+			Price	14301.67
+
+						Chicken  
+						Age:    23 Months
+						Weight: 1.495 Kg
+						Gender: Male
+						Price:  R$29.90
+
+				Pig  
+				Age	1 Months
+				Weight	84.935 Kg
+				Gender	Female
+				Price	2378.19
+
+					Duck  
+					Age	57 Months
+					Weight	4.263 Kg
+					Gender	Female
+					Price	136.42
+
+			Bull  
+			Age	13 Months
+			Weight	523.141 Kg
+			Gender	Female
+			Price	18309.93
+
+				Pig  
+				Age	2 Months
+				Weight	83.035 Kg
+				Gender	Female
+				Price	2324.99
+
+			Bull  
+			Age	8 Months
+			Weight	329.413 Kg
+			Gender	Female
+			Price	11529.46
+
+				Pig  
+				Age	3 Months
+				Weight	90.212 Kg
+				Gender	Female
+				Price	2525.94
+
+					Duck  
+					Age	18 Months
+					Weight	3.495 Kg
+					Gender	Female
+					Price	111.85
+
+						Chicken  
+						Age:    16 Months
+						Weight: 1.392 Kg
+						Gender: Male
+						Price:  R$27.84
+
+						Chicken  
+						Age:    17 Months
+						Weight: 1.152 Kg
+						Gender: Male
+						Price:  R$23.04
+
+			Bull  
+			Age	12 Months
+			Weight	450.221 Kg
+			Gender	Female
+			Price	15757.72
+
+			Bull  
+			Age	1 Months
+			Weight	522.625 Kg
+			Gender	Female
+			Price	18291.88
+
+				Pig  
+				Age	4 Months
+				Weight	83.329 Kg
+				Gender	Female
+				Price	2333.22
+
+					Duck  
+					Age	8 Months
+					Weight	4.011 Kg
+					Gender	Male
+					Price	128.36
+
+			Bull  
+			Age	4 Months
+			Weight	331.667 Kg
+			Gender	Male
+			Price	11608.35
+
+				Pig  
+				Age	5 Months
+				Weight	63.846 Kg
+				Gender	Female
+				Price	1787.68

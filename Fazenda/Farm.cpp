@@ -1,15 +1,32 @@
 #include "Farm.hpp"
 
-Farm::Farm(string city, string state, float area) //Constructor
+Farm::Farm(string city, string state, string name, float area) //Constructor
 {
     SetArea(area);
     SetCity(city);
     SetState(state);
+    SetName(name);
     setPrice_kg(35, 28, 32, 20);
+    revenue = 0;
+    name += ".csv";
+    name_archive = name;
+    archive.open(name_archive, fstream::out| fstream::trunc);
+
+    archive << "\t\tThe farm " << GetName() << endl
+            << "\t\t\t*Bulls*"
+            << "\t\t*Pigs*"
+            << "\t\t*Ducks*"
+            << "\t\t*Chickens*";
+    archive.close();
 }
 
 Farm::~Farm() //Destructor
 {
+    if(archive.is_open())
+    {
+        archive.close();
+    }
+
     for(size_t i = 0; i < farm.size(); i++) 
     {
         delete farm[i]; 
@@ -84,6 +101,47 @@ void Farm::print() //Print the Farm status;
          << "\nPrice of chickens: R$" << price_type(Type_Chicken)
          << "\n\nTotal price: R$" << total_price()
          << "\nRevenue: R$" << revenue << endl;
+}
+
+void Farm::print_archive()
+{
+    if(farm.empty()) //If the Farm is empty there is nothing to print;
+    {
+        cerr << "\nFarm is empty" << endl;
+        exit(EXIT_FAILURE);
+    }
+
+    archive.open(name_archive, fstream::out| fstream::app);
+
+    archive << "\n\nCity\t" << GetCity()
+            << "\nState\t" << GetState() << fixed << setprecision(2)
+            << "\nArea (m²)\t" << GetArea()
+            << "\nNumber of animals\t" << farm.size()
+            << "\n\nNumber of bulls\t" << Bull::getn_bulls()
+            << "\nPrice of bulls\tR$" << price_type(Type_Bull)
+            << "\nNumber of pigs\t" << Pig::getn_pigs()
+            << "\nPrice of pigs\tR$" << price_type(Type_Pig)
+            << "\nNumber of ducks\t" << Duck::getn_ducks()
+            << "\nPrice of ducks\tR$" << price_type(Type_Duck)
+            << "\nNumber of chickens\t" << Chicken::getn_chickens()
+            << "\nPrice of chickens\tR$" << price_type(Type_Chicken)
+            << "\n\nTotal price\tR$" << total_price()
+            << "\nRevenue\tR$" << revenue << endl << endl;
+    archive.close();
+
+    for(size_t i = 0; i < farm.size(); i++)
+    {
+        write_in_archive("\n");
+        farm[i]->print_archive(archive, name_archive);
+        write_in_archive("\n");
+    }
+}
+
+void Farm::write_in_archive(string text)
+{
+    archive.open(name_archive, fstream::out| fstream::app);
+    archive << text;
+    archive.close();
 }
 
 void Farm::print_animal(Type_Animal type ,int index) //Print the animal status by the index
@@ -309,5 +367,4 @@ int Farm::getn_animals_per_type(Type_Animal type)
             return Chicken::getn_chickens();
             break;
     }
-
 }

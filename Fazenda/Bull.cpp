@@ -84,12 +84,24 @@ void Bull::setage(int n)
 
     else Animals::setage(1); //if the input value is an invalid one. The age will be 1 (month)
 }
+
 void Bull::print()
 {
-
     cout << "Bull  "
          << "\nAge:    " << getage() << " Months" << fixed << setprecision(3)
          << "\nWeight: " << getweight() << " Kg"
          << "\nGender: " << getgender() << setprecision(2)
          << "\nPrice:  R$" << price();
+}
+
+void Bull::print_archive(fstream &file, string &name)
+{
+    file.open(name, fstream::out| fstream::app);
+
+    file << "\t\t\tBull  "
+         << "\n\t\t\tAge\t" << getage() << " Months" << fixed << setprecision(3)
+         << "\n\t\t\tWeight\t" << getweight() << " Kg"
+         << "\n\t\t\tGender\t" << getgender() << setprecision(2)
+         << "\n\t\t\tPrice\t" << price();
+    file.close();
 }

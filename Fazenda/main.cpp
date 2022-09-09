@@ -1,5 +1,4 @@
 #include <iostream>
-#include <fstream>
 
 #include "Farm.hpp"
 
@@ -7,22 +6,17 @@ int main()
 {
     srand(time(NULL));
 
-    Farm farm ("city", "state", 50);
+    Farm farm ("city", "state", "Cornvile", 50);
 
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < 50; i++)
     {
-    farm.Add_toFarmRDM (Type_Bull);
+    farm.Add_toFarmRDM (Type_Animal (rand() % 4));
     }
-
-    farm.print();
  
-    farm.feed(2);
-
+    farm.feed(1);
+    
     farm.print();
-
-    for (int i = 1; i <= 5; i++)
-    farm.print_animal(Type_Bull, i);
+    farm.print_archive();
 
     return 0;
-
 }

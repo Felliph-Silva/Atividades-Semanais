@@ -92,3 +92,15 @@ void Chicken::print()
          << "\nGender: " << getgender() << setprecision(2)
          << "\nPrice:  R$" << price();
 }
+
+void Chicken::print_archive(fstream &file, string &name)
+{
+    file.open(name, fstream::out| fstream::app);
+
+    file << "\t\t\t\t\t\tChicken  "
+         << "\n\t\t\t\t\t\tAge:    " << getage() << " Months" << fixed << setprecision(3)
+         << "\n\t\t\t\t\t\tWeight: " << getweight() << " Kg"
+         << "\n\t\t\t\t\t\tGender: " << getgender() << setprecision(2)
+         << "\n\t\t\t\t\t\tPrice:  R$" << price();
+    file.close();
+}

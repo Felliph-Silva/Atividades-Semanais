@@ -93,3 +93,15 @@ void Duck::print()
          << "\nGender: " << getgender() << setprecision(2)
          << "\nPrice:  R$" << price();
 }
+
+void Duck::print_archive(fstream &file, string &name)
+{
+    file.open(name, fstream::out| fstream::app);
+
+    file << "\t\t\t\t\tDuck  "
+         << "\n\t\t\t\t\tAge\t" << getage() << " Months" << fixed << setprecision(3)
+         << "\n\t\t\t\t\tWeight\t" << getweight() << " Kg"
+         << "\n\t\t\t\t\tGender\t" << getgender() << setprecision(2)
+         << "\n\t\t\t\t\tPrice\t" << price();
+    file.close();
+}

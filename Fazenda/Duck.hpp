@@ -23,6 +23,7 @@ class Duck : public Animals
       virtual void eat ();
       virtual float price (); 
       virtual void print ();
+      virtual void print_archive(fstream &file, string &name);
       virtual string sound () const;
 
       //Setters

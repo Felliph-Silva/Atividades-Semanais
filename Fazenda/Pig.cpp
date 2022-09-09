@@ -87,10 +87,21 @@ void Pig::setage(int n)
 }
 void Pig::print()
 {
-
     cout << "Pig   "
          << "\nAge:    " << getage() << " Months" << fixed << setprecision(3)
          << "\nWeight: " << getweight() << " Kg"
          << "\nGender: " << getgender() << setprecision(2)
          << "\nPrice:  R$" << price();
+}
+
+void Pig::print_archive(fstream &file, string &name)
+{
+    file.open(name, fstream::out| fstream::app);
+
+    file << "\t\t\t\tPig  "
+         << "\n\t\t\t\tAge\t" << getage() << " Months" << fixed << setprecision(3)
+         << "\n\t\t\t\tWeight\t" << getweight() << " Kg"
+         << "\n\t\t\t\tGender\t" << getgender() << setprecision(2)
+         << "\n\t\t\t\tPrice\t" << price();
+    file.close();
 }

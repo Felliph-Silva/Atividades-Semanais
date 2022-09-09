@@ -6,6 +6,7 @@ using namespace std;
 #include <string>
 #include <iostream>
 #include <iomanip>
+#include <fstream>
 
 enum Gender //linking a gender to a number (starting from 0)
 {
@@ -30,6 +31,7 @@ class Animals
       virtual float price()        = 0;
       virtual void eat()           = 0;
       virtual void print()         = 0;
+      virtual void print_archive(fstream &file, string &name) = 0;
 
       //Getters:
       virtual float getweight() const {return weight;}

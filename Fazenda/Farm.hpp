@@ -17,7 +17,7 @@ class Farm
 {
     public:
 
-        Farm(string city, string state, float area); //Constructor;
+        Farm(string city, string state, string name, float area); //Constructor;
         ~Farm(); //Destructor;
 
         void Add_toFarm(Animals* animal);
@@ -25,6 +25,8 @@ class Farm
         void Add_toFarmRDM(Type_Animal type); //Add a new animal to the Farm, with random atributes;
         
         void print();                         //Print the Farm status;
+
+        void print_archive();              //Print to archive the farm status and all animals int this farm;
         
         void print_animal(Type_Animal type, int index);         //Print the Animal status;
         
@@ -46,23 +48,17 @@ class Farm
 
         //Getters
         string GetCity() const {return city;}
-        
         string GetState() const {return state;}
-        
+        string GetName() const {return name;}
         float GetArea() const {return area;}
-        
         int getn_animals() {return farm.size();}
-
         int getn_animals_per_type(Type_Animal type);
-        
 
         //Setters
-        void SetCity(string city) {this->city = city;}
-        
-        void SetState(string state) {this->state = state;}
-        
-        void SetArea(float area);
-        
+        void SetCity(string &city) {this->city = city;}
+        void SetState(string &state) {this->state = state;}
+        void SetName(string &name) {this->name = name;}        
+        void SetArea(float area);        
         void setPrice_kg(float bull, float pig, float duck, float chicken); //Price per kg for each animal;
 
     private:
@@ -70,9 +66,13 @@ class Farm
         vector <Animals *> farm; //Vector of animals using polimorphism;
         string city;
         string state;
+        string name;
+        string name_archive;
         float area;
         float revenue; //revenue of sold animals
+        fstream archive;
 
         Animals* CreateAnimal(Type_Animal type); //Creates a new animal
+        void write_in_archive(string text);
 };
 #endif
