@@ -1,0 +1,10 @@
+Employee Management System
+
+One of the best project ideas for C++ as a beginner is the employee management system. 
+In this system, you need to build a complete application (mobile, phone) that has a dashboard 
+describing the user’s (employee) profile, and a database that holds the record of all the data regarding users’ information.
+A user can edit changes in his/her profile where all the personal details are recorded.
+C++ has excellent libraries that can be used to perform operations. 
+Source code allows you to add, delete, or edit the records. 
+This system is the best C++ project that can be used in organizations to track records of the employees.  
+
