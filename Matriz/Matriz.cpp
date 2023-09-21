@@ -110,19 +110,37 @@ bool Matriz::diagonal_check() //Verificar se a matriz é diagonal;
         {
             if (i == j) continue; //Ignora os elementos da diagonal principal;
                 
-            if (matriz[i][j] == 0) //Se um elemento for igual a zero, incrementa o contador;
+            if (matriz[i][j] != 0) //Se um elemento fora da diagonal principal for diferente de zero, retorna false;
             {
-                cont++; //Conta a quantiade de zeros fora da diagonal principal;
+                return false;
             }
         }
- 
-        if(cont == (line * column) - line) //Se o contador for igual ao numero de elementos fora da diagonal principal, retorna true;
-        {
-            return true;
-        }
+    }
+    return true;
+}
+
+Matriz Matriz::laplace_method()
+{
+    if(this->line <= 2 || this->column <= 2) return
+}
+
+double Matriz::determinante()
+{
+    if(this->line != this-> column)
+    {
+        cerr << "\nThis matrix don't have determinat!";
+        exit(EXIT_FAILURE);
     }
 
-    return false;
+    if()
+    temp = *this;
+
+    for(int i = 0; i < this->line; i++)
+        for(int j = 0; j < this-> column; j++)
+        {
+            pow(-1,j)*temp[i][j]; //fazer Cofator; 
+        }
+
 }
 
 void Matriz::trocalinha(int i, int linechange) //Método que utiliza um ponteiro auxiliar para trocar linhas

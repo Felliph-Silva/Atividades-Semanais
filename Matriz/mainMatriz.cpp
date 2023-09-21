@@ -13,7 +13,7 @@ matrizB.fillrand(0, 10);
 cout << matrizA;
 cout << matrizB;
 //Matriz matrizD = matrizA;
-//Matriz matrizC(2 + matrizB);
+//Matriz matrizC(2 + matrizB);-
 
 matrizA.gaussian_elimination();
 cout << matrizA;
